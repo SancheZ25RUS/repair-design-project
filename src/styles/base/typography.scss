@@ -1,0 +1,33 @@
+.page {
+  font: 400 re-c(16) var(--font-nunito);
+  line-height: 1;
+  color: var(--color-white);
+}
+
+// header
+.header {
+  font-size: re-c(11);
+
+  &__logo {
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  &__nav {
+    text-transform: uppercase;
+  }
+
+  &__call {
+    @include media-tablet {
+      text-decoration: underline;
+      color: var(--color-accent);
+    }
+  }
+
+  &__cta {
+    font-style: italic;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+}

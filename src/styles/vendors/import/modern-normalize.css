@@ -104,6 +104,7 @@ textarea {
 
 button,
 select { /* 1 */
+  border: none;
   text-transform: none;
 }
 
