@@ -1,0 +1,14 @@
+.idea
+node_modules
+.venv
+.env
+__pycache__
+dist
+yarn.lock
+package-lock.json
+version.json
+gulp/config/data.js
+yarn-error.log
+migrations/
+*.drawio
+pnpm-lock.yaml
