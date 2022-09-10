@@ -13,6 +13,7 @@ export const images = () => {
           })
         )
       )
+      .pipe(app.gulp.dest(app.path.build.images))
       .pipe(app.plugins.newer(app.path.build.images))
       // Remove converting to .webp only for prod build
       // .pipe(app.plugins.if(app.isBuild, webp()))
@@ -26,10 +27,10 @@ export const images = () => {
         app.plugins.if(
           app.isBuild,
           imagemin({
-            progressive: true,
+            // progressive: true,
             svgoPlugins: [{ removeViewBox: false }],
-            interlaced: true,
-            optimizationLevel: 3, // 0 to 7
+            // interlaced: true,
+            // optimizationLevel: 0, // 0 to 7
           })
         )
       )
