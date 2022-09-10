@@ -31,3 +31,27 @@
     color: var(--color-white);
   }
 }
+
+// offer
+.offer {
+  &__title {
+    font: 400 clamp(re-c(23), 5vw, re-c(40)) var(--font-yeseva);
+    line-height: 133%;
+    text-transform: uppercase;
+
+    > span {
+      color: var(--color-accent);
+    }
+  }
+
+  &__subtitle {
+    font: 400 clamp(re-c(14), 3vw, re-c(22)) var(--font-nunito);
+  }
+
+  &__button-cta,
+  &__button-additional {
+    font: italic 400 re-c(11) var(--font-nunito);
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+}

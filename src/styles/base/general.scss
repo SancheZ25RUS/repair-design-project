@@ -5,8 +5,6 @@ a {
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 button {
@@ -15,6 +13,12 @@ button {
 
 .container {
   padding: 0 re-c(18);
+
+  @include media-desktop {
+    margin: 0 auto;
+    padding: 0;
+    max-width: re-c(1180);
+  }
 }
 
 .main {
