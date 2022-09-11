@@ -36,4 +36,52 @@ html.html(lang="en")
             .offer__buttons-wrap
               button.offer__button.offer__button-cta calculate the cost
               button.offer__button.offer__button-additional submit your application
+      section.projects
+        .container.projects__container
+          .projects__tab-wrap
+            button.projects__tab.projects__tab--active rostov-on-don, admiral
+            button.projects__tab sochi thieves
+            button.projects__tab rostov-on-don, patriotic
+          header.projects__header
+            h2.projects__title completed
+              br
+              | projects
+            p.projects__subtitle Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
+          .slider.projects__slider
+            .slider__track
+              img(src="@img/projects/project-1.jpg" alt="Photo completed apartment").slider__image
+              img(src="@img/projects/project-2.jpg" alt="Photo completed apartment").slider__image
+            .slider__arrow-wrap
+              button.slider__arrow
+                svg.arrow-svg.arrow-svg--left
+                  use(xlink:href="@img/icons/icons.svg#slider-arrow")
+              button.slider__arrow
+                svg.arrow-svg
+                  use(xlink:href="@img/icons/icons.svg#slider-arrow")
+          .projects__info
+            .projects__info-item
+              h3.projects__info-title city:
+              p.projects__info-data Rostov-on-Don
+                br
+              | LCD admiral
+            .projects__info-item
+              h3.projects__info-title apartment area:
+              p.projects__info-data 81 m2
+            .projects__info-item
+              h3.projects__info-title repair time:
+              p.projects__info-data 3.5 months
+            .projects__info-item
+              h3.projects__info-title repair cost:
+              p.projects__info-data Upon request
+          .projects__pagination
+            button.projects__pagination-arrow-btn
+              svg.projects__pagination-arrow-svg
+                use(xlink:href="@img/icons/icons.svg#pagination-arrow")
+            .projects__pagination-dot-wrap
+              button.projects__pagination-dot.projects__pagination-dot--active
+              button.projects__pagination-dot
+              button.projects__pagination-dot
+            button.projects__pagination-arrow-btn.projects__pagination-arrow-btn--next
+              svg.projects__pagination-arrow-svg
+                use(xlink:href="@img/icons/icons.svg#pagination-arrow")
     script(src="./js/app.min.js")

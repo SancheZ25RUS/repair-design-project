@@ -55,3 +55,44 @@
     color: var(--color-white);
   }
 }
+
+.projects {
+  &__title {
+    font: 400 clamp(re-c(22), 3vw, re-c(27)) / 139% var(--font-yeseva);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  &__subtitle {
+    font: 400 clamp(re-c(11), 3vw, re-c(14)) / 160% var(--font-nunito);
+    text-align: center;
+
+    @include media-desktop {
+      font: 400 clamp(re-c(11), 3vw, re-c(14)) / 190% var(--font-nunito);
+      text-align: initial;
+    }
+  }
+
+  &__tab {
+    @include media-tablet {
+      font: 400 re-c(14) / 139% var(--font-yeseva);
+      text-transform: uppercase;
+      color: var(--color-gray);
+
+      &--active {
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__info-title {
+    font: 400 clamp(re-c(14), 3vw, re-c(18)) / 139% var(--font-yeseva);
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  &__info-data {
+    font: 400 clamp(re-c(11), 3vw, re-c(13)) / 136% var(--font-nunito);
+  }
+}

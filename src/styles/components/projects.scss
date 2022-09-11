@@ -1,0 +1,140 @@
+.projects {
+  padding: re-c(35) 0 re-c(90);
+  background-color: var(--color-background-block);
+
+  &__container {
+    @include media-tablet {
+      display: grid;
+      column-gap: re-c(50);
+      grid-template-columns: 35% 60%;
+      grid-template-rows: re-c(30) re-c(200) re-c(200) re-c(20);
+      row-gap: re-c(30);
+    }
+  }
+
+  &__title {
+    margin: 0 0 re-c(20);
+  }
+
+  &__subtitle {
+    margin: 0 0 re-c(70);
+    padding: 0 5%;
+
+    @include media-tablet {
+      margin: initial;
+    }
+  }
+
+  &__tab-wrap {
+    display: none;
+
+    @include media-tablet {
+      display: flex;
+      justify-content: flex-end;
+      grid-column: 1 / 3;
+      gap: re-c(60);
+    }
+  }
+
+  &__tab {
+    @include media-tablet {
+      border-bottom: re-c(1) solid transparent;
+      padding: re-c(5) 0;
+      background-color: transparent;
+
+      &--active {
+        border-bottom: re-c(1) solid var(--color-accent);
+      }
+    }
+  }
+
+  &__header {
+    @include media-tablet {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+  }
+
+  &__slider {
+    margin: 0 0 re-c(35);
+
+    @include media-tablet {
+      grid-row: 2 / 5;
+      margin: initial;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    gap: re-c(30) re-c(60);
+
+    @include media-tablet {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+  }
+
+  &__info-title {
+    margin: 0 0 re-c(10);
+  }
+
+  &__pagination {
+    display: none;
+
+    @include media-tablet {
+      display: flex;
+      grid-row: 4 /5;
+      gap: re-c(23);
+    }
+  }
+
+  &__pagination-arrow-btn {
+    @include media-tablet {
+      display: flex;
+      align-items: center;
+      padding: re-c(5);
+      background-color: transparent;
+
+      &:hover {
+        > svg {
+          fill: var(--color-accent);
+        }
+      }
+
+      &--next {
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+
+  &__pagination-arrow-svg {
+    @include media-tablet {
+      width: re-c(43);
+      height: re-c(15);
+      fill: var(--color-white);
+    }
+  }
+
+  &__pagination-dot-wrap {
+    @include media-tablet {
+      display: flex;
+      align-items: center;
+      gap: re-c(18);
+    }
+  }
+
+  &__pagination-dot {
+    @include media-tablet {
+      border-radius: re-c(10);
+      width: re-c(10);
+      height: re-c(10);
+      background-color: var(--color-gray);
+
+      &--active {
+        background-color: var(--color-accent);
+      }
+    }
+  }
+}
