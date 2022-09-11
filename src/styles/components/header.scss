@@ -13,7 +13,7 @@
 
   &__logo, {
     display: inline-block;
-    padding: re-c(23) re-c(23) re-c(23) 0;
+    padding: re-c(23) re-c(10) re-c(23) 0;
 
     @include media-tablet {
       padding: re-c(13);
@@ -31,7 +31,7 @@
 
   &__call {
     display: inline-block;
-    padding: re-c(23) 0 re-c(23) re-c(23);
+    padding: re-c(23) 0 re-c(23) re-c(10);
 
     @include media-tablet {
       margin-left: auto;
