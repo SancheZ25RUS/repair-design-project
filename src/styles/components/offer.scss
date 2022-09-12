@@ -37,19 +37,10 @@
     padding: re-c(20) 0;
     transition: box-shadow 1s;
 
-    &:hover {
-      box-shadow: 0 5px 15px rgb(227 184 115 / 20%);
-      transition: box-shadow 0.5s;
-    }
-
     @include media-custom(re-c(540)) {
       border-radius: re-c(2);
       width: 100%;
     }
-  }
-
-  &__button-cta {
-    background-color: var(--color-accent);
   }
 
   &__button-additional {

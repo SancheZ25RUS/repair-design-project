@@ -26,6 +26,15 @@ img {
   }
 }
 
+.btn-cta {
+  background-color: var(--color-accent);
+
+  &:hover {
+    box-shadow: 0 5px 15px rgb(227 184 115 / 20%);
+    transition: box-shadow 0.5s;
+  }
+}
+
 .main {
   padding-top: re-c(57);
 
