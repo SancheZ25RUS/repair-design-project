@@ -4,6 +4,16 @@
   color: var(--color-white);
 }
 
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-white);
+
+  &__text {
+    font: 400 clamp(re-c(20), 2vw, re-c(24)) var(--font-yeseva);
+  }
+}
+
 // header
 .header {
   font-size: re-c(11);
@@ -95,5 +105,32 @@
 
   &__info-data {
     font: 400 clamp(re-c(11), 3vw, re-c(13)) / 136% var(--font-nunito);
+  }
+}
+
+// online-control
+.online-control {
+  &__description {
+    font: 400 clamp(re-c(11), 2vw, re-c(18)) / 170% var(--font-nunito);
+    text-align: center;
+
+    @include media-tablet {
+      font: 400 clamp(re-c(11), 2vw, re-c(18)) / re-c(37) var(--font-nunito);
+      color: var(--color-gray);
+    }
+  }
+
+  &__form-checkbox-label {
+    font: 400 re-c(14) var(--font-nunito);
+
+    @include media-tablet {
+      color: initial;
+    }
+  }
+
+  &__form-submit-button {
+    font: 400 re-c(13) var(--font-nunito);
+    text-transform: uppercase;
+    color: var(--color-white);
   }
 }

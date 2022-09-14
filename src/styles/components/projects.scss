@@ -137,4 +137,8 @@
       }
     }
   }
+
+  @include media-tablet {
+    padding-bottom: re-c(370);
+  }
 }

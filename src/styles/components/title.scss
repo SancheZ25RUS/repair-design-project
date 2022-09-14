@@ -1,0 +1,28 @@
+.title {
+  &__text {
+    margin-bottom: re-c(10);
+  }
+
+  &__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: re-c(13);
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      border-radius: re-c(2);
+      width: re-c(30);
+      height: re-c(2);
+      background-color: var(--color-accent);
+    }
+  }
+
+  &__icon {
+    width: re-c(35);
+    height: re-c(35);
+    fill: var(--color-accent);
+  }
+}
