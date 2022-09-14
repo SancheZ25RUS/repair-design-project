@@ -27,4 +27,8 @@
     height: re-c(35);
     fill: var(--color-accent);
   }
+
+  @include media-tablet {
+    margin-bottom: re-c(30);
+  }
 }
