@@ -1,0 +1,74 @@
+.repair-types {
+  &__cards-wrap {
+    @include media-tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: re-c(125);
+      gap: re-c(30);
+    }
+  }
+
+  &__card {
+    position: relative;
+    margin-bottom: re-c(60);
+    padding-bottom: re-c(100);
+
+    @include media-tablet {
+      flex-basis: re-c(350);
+    }
+  }
+
+  &__card-img {
+    vertical-align: bottom;
+    width: 100%;
+  }
+
+  &__card-data-wrap {
+    position: absolute;
+    bottom: 0;
+    padding: re-c(20) re-c(30) 0;
+    width: 80%;
+    box-shadow: 5px 10px 20px rgb(0 0 0 / 5%);
+    background: var(--color-white);
+
+    @include media-tablet {
+      left: 10%;
+    }
+  }
+
+  &__card-title {
+    margin-bottom: re-c(10);
+  }
+
+  &__card-list-item {
+    position: relative;
+    padding-left: re-c(10);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: re-c(8);
+      display: block;
+      border-radius: re-c(3);
+      width: re-c(5);
+      height: re-c(5);
+      background-color: var(--color-gray);
+    }
+  }
+
+  &__btn-cta {
+    position: relative;
+    left: re-c(-30);
+    bottom: re-c(-20);
+    display: block;
+    padding: re-c(12) re-c(17);
+    box-shadow: 5px 5px 10px rgb(227 184 115 / 30%);
+    background-color: var(--color-accent);
+
+    @include media-tablet {
+      padding: re-c(17);
+    }
+  }
+}

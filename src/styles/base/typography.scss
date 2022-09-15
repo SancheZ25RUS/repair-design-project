@@ -134,3 +134,39 @@
     color: var(--color-white);
   }
 }
+
+// repair-types
+.repair-types {
+  font: 400 re-c(13) / re-c(22) var(--font-nunito);
+  color: var(--color-gray);
+
+  &__title {
+    color: var(--color-black);
+  }
+
+  &__card-data-wrap {
+    color: #959595;
+  }
+
+  &__card-title {
+    font: 400 clamp(re-c(15), 2vw, re-c(18)) var(--font-yeseva);
+    color: var(--color-gray);
+  }
+
+  &__card-list {
+    @include media-tablet {
+      line-height: re-c(27);
+    }
+  }
+
+  &__btn-cta {
+    font: 400 clamp(re-c(15), 2vw, re-c(18)) var(--font-yeseva);
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+
+  @include media-tablet {
+    font: 400 re-c(13) / re-c(26) var(--font-nunito);
+  }
+}
