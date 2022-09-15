@@ -97,15 +97,15 @@ html.html(lang="en")
               svg.online-control__video-play-svg
                 use(xlink:href="@img/icons/icons.svg#play")
           p.online-control__description At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.
-          form(action="#").online-control__form
-            label.online-control__form-label Name
-              input(type="text" placeholder="What is your name:" name="username").online-control__form-input
-            label.online-control__form-label Number
-              input(type="tel" placeholder="Your phone number:" name="phone").online-control__form-input
-            .online-control__form-checkbox-wrap
-              input(type="checkbox" name="agree-checkbox" checked="true")#agree-checkbox.online-control__form-checkbox
-              label(for="agree-checkbox").online-control__form-checkbox-label I agree to the processing of personal data
-            input(type="button" value="submit").btn-cta.online-control__form-submit-button
+          form(action="#").page-form.online-control__form
+            label.page-form__label.online-control__form-label Name
+              input(type="text" placeholder="What is your name:" name="username").page-form__input.online-control__form-input
+            label.page-form__label.online-control__form-label Number
+              input(type="tel" placeholder="Your phone number:" name="phone").page-form__input.online-control__form-input
+            .page-form__checkbox-wrap.online-control__form-checkbox-wrap
+              input(type="checkbox" name="agree-checkbox" checked="true").page-form__checkbox#agree-checkbox.online-control__form-checkbox
+              label(for="agree-checkbox").page-form__checkbox-label I agree to the processing of personal data
+            input(type="button" value="submit").btn-cta.page-form__submit-button
       section.repair-types
         .container
           .title.repair-types__title

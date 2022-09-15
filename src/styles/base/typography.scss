@@ -108,6 +108,14 @@
   }
 }
 
+.page-form {
+  &__submit-button {
+    font: 400 re-c(13) var(--font-nunito);
+    text-transform: uppercase;
+    color: var(--color-white);
+  }
+}
+
 // online-control
 .online-control {
   &__description {

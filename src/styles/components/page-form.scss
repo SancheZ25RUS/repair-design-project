@@ -1,0 +1,102 @@
+.page-form {
+  &__label {
+    display: block;
+    font: 400 re-c(13) var(--font-nunito);
+    color: var(--color-gray);
+  }
+
+  &__input {
+    display: block;
+    outline: none;
+    border: 1px solid transparent;
+    border-bottom: re-c(1) solid var(--color-white);
+    padding: re-c(8) 0;
+    width: 100%;
+    color: var(--color-white);
+    background-color: transparent;
+
+    &::placeholder {
+      color: var(--color-white);
+
+      @include media-tablet {
+        color: var(--color-black);
+      }
+    }
+
+    &:focus {
+      border-bottom: re-c(1) solid var(--color-accent);
+    }
+
+    @include media-tablet {
+      border-bottom: re-c(1) solid var(--color-gray);
+      color: initial;
+    }
+  }
+
+  &__checkbox-wrap {
+    margin-bottom: re-c(38);
+  }
+
+  &__checkbox-label {
+    font: 400 re-c(14) var(--font-nunito);
+
+    @include media-tablet {
+      color: initial;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__submit-button {
+    display: block;
+    border: none;
+    padding: re-c(20) 0;
+    width: 100%;
+    transform: translateY(50%);
+    cursor: pointer;
+
+    @include media-tablet {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      border-radius: re-c(2);
+
+      // width: initial;
+      transform: initial;
+    }
+  }
+
+  &__checkbox:focus + &__checkbox-label::before {
+    box-shadow: 0 0 0 0.2rem var(--color-accent);
+  }
+
+  &__checkbox + &__form-checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  &__checkbox + &__checkbox-label::before {
+    content: "";
+    position: relative;
+    bottom: re-c(-2);
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: re-c(10);
+    border: re-c(1) solid var(--color-accent);
+    border-radius: re-c(1);
+    width: re-c(18);
+    height: re-c(18);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &__checkbox:checked + &__checkbox-label::before {
+    background-image: url("@img/online-control/check.svg");
+    background-color: var(--color-accent);
+  }
+}
