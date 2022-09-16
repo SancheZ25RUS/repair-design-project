@@ -1,0 +1,82 @@
+.fantasies {
+  position: relative;
+  margin-bottom: max(-65vw, re-c(-400));
+
+  &__container {
+    @include media-custom(re-c(1000)) {
+      position: relative;
+      display: flex;
+    }
+  }
+
+  &__title {
+    margin-bottom: re-c(45);
+    padding: 0 5%;
+
+    @include media-custom(re-c(1000)) {
+      display: inline-block;
+      padding: initial;
+      max-width: re-c(300);
+    }
+  }
+
+  &__list {
+    display: none;
+
+    @include media-custom(re-c(1000)) {
+      display: flex;
+      flex-direction: column;
+      gap: re-c(20);
+    }
+  }
+
+  &__button {
+    border: 1px solid transparent;
+    background: transparent;
+
+    &--active {
+      border-bottom: 1px solid var(--color-accent);
+    }
+  }
+
+  &__slider {
+    margin: 0 auto;
+
+    @include media-custom(re-c(1000)) {
+      display: none;
+    }
+  }
+
+  &__gallery {
+    display: none;
+
+    @include media-custom(re-c(1000)) {
+      position: absolute;
+      right: re-c(5);
+      top: re-c(-35);
+      display: flex;
+      gap: clamp(re-c(10), 2.4vw, re-c(40));
+    }
+  }
+
+  &__gallery-module {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(re-c(10), 2.4vw, re-c(40));
+
+    &:first-child {
+      transform: translateY(re-c(-150));
+    }
+
+    &:last-child {
+      transform: translateY(re-c(-250));
+    }
+  }
+
+  @include media-custom(re-c(1000)) {
+    margin-bottom: 100px;
+    padding: re-c(135) 0 re-c(100);
+    background-image: url("@img/fantasies/fantasies-bg.jpg");
+    background-size: cover;
+  }
+}

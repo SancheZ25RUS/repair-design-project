@@ -189,3 +189,30 @@
     color: var(--color-accent);
   }
 }
+
+// fantasies
+.fantasies {
+  &__title {
+    font: 400 clamp(re-c(22), 2vw, re-c(27)) var(--font-yeseva);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-accent);
+
+    @include media-custom(re-c(1000)) {
+      text-align: left;
+    }
+  }
+
+  &__button {
+    font: 400 re-c(20) var(--font-nunito);
+    color: var(--color-white);
+
+    &:hover {
+      color: var(--color-accent);
+    }
+
+    &--active {
+      color: var(--color-accent);
+    }
+  }
+}

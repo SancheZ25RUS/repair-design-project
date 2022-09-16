@@ -182,5 +182,49 @@ html.html(lang="en")
                 svg.benefits__discount-icon
                   use(xlink:href="@img/icons/icons.svg#pig")
               p.benefits__discount-text Help save 10 - 20% of the cost of materials
-      section(style="height: 100px; background-color: var(--color-gray)")
+      section.fantasies
+        .container.fantasies__container
+          .fantasies__types
+            h2.fantasies__title we realize your wildest fantasies
+            ul.fantasies__list
+              li.fantasies__item
+                button.fantasies__button.fantasies__button--active American classic
+              li.fantasies__item
+                button.fantasies__button Empire
+              li.fantasies__item
+                button.fantasies__button Classical
+              li.fantasies__item
+                button.fantasies__button Loft
+              li.fantasies__item
+                button.fantasies__button Minimalism
+              li.fantasies__item
+                button.fantasies__button Provence
+              li.fantasies__item
+                button.fantasies__button Romanticism
+              li.fantasies__item
+                button.fantasies__button Scandinavian style
+              li.fantasies__item
+                button.fantasies__button Mediterranean style
+              li.fantasies__item
+                button.fantasies__button High tech
+              li.fantasies__item
+                button.fantasies__button Eclecticism
+          .slider.fantasies__slider
+            .slider__track
+              img(src="@img/fantasies/slider-1.jpg" alt="Photo completed apartment").slider__image
+            .slider__arrow-wrap
+              button.slider__arrow
+                svg.arrow-svg.arrow-svg--left
+                  use(xlink:href="@img/icons/icons.svg#slider-arrow")
+              button.slider__arrow
+                svg.arrow-svg
+                  use(xlink:href="@img/icons/icons.svg#slider-arrow")
+          .fantasies__gallery
+            .fantasies__gallery-module
+              img(src="@img/fantasies/fantasies-gallery-1.jpg" alt="Apartmets photo").fantasies__gallery-photo
+              img(src="@img/fantasies/fantasies-gallery-2.jpg" alt="Apartmets photo").fantasies__gallery-photo
+            .fantasies__gallery-module
+              img(src="@img/fantasies/fantasies-gallery-3.jpg" alt="Apartmets photo").fantasies__gallery-photo
+              img(src="@img/fantasies/fantasies-gallery-4.jpg" alt="Apartmets photo").fantasies__gallery-photo
+      section(style="height: 1000px; background-color: var(--color-gray)")
     script(src="./js/app.min.js")
