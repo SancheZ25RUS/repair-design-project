@@ -244,3 +244,12 @@
     text-transform: uppercase;
   }
 }
+
+// questions
+.questions {
+  &__title {
+    font: 400 re-c(20) var(--font-yeseva);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

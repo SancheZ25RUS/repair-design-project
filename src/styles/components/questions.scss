@@ -1,0 +1,75 @@
+.questions {
+  padding-top: 40%;
+  background: var(--color-background-block);
+
+  &__title {
+    margin-bottom: re-c(45);
+  }
+
+  &__form {
+    padding: 0 0 re-c(50) 0;
+
+    @include media-custom(re-c(1000)) {
+      margin: 0 auto;
+      padding: re-c(35) 5%;
+      max-width: 70%;
+      background-color: var(--color-background-block);
+      transform: translateY(re-c(-230));
+    }
+  }
+
+  &__form-inner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: re-c(20);
+    gap: re-c(60);
+
+    @include media-custom(re-c(1000)) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      margin-bottom: re-c(45);
+    }
+  }
+
+  &__form-input {
+    color: var(--color-white);
+
+    &::placeholder {
+      color: var(--color-white);
+    }
+  }
+
+  &__form-checkbox-wrap {
+    margin-bottom: re-c(65);
+
+    @include media-custom(re-c(1000)) {
+      text-align: center;
+    }
+  }
+
+  &__form-checkbox-label {
+    color: var(--color-white);
+  }
+
+  &__form-submit-button {
+    transform: initial;
+
+    @include media-custom(re-c(1000)) {
+      margin: 0 auto;
+      max-width: re-c(230);
+    }
+  }
+
+  &__form-label:last-child {
+    @include media-custom(re-c(1000)) {
+      grid-column: 1 / 3;
+    }
+  }
+
+  @include media-custom(re-c(1000)) {
+    margin-bottom: re-c(-500);
+    padding-top: initial;
+    background: initial;
+  }
+}

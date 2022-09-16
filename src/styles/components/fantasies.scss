@@ -1,6 +1,6 @@
 .fantasies {
   position: relative;
-  margin-bottom: max(-65vw, re-c(-400));
+  margin-bottom: max(-32vw, re-c(-400));
 
   &__container {
     @include media-custom(re-c(1000)) {

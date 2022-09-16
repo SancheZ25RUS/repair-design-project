@@ -286,5 +286,20 @@ html.html(lang="en")
                   svg
                     use(xlink:href="@img/icons/icons.svg#calendar")
                   p 86 days
-      section(style="height: 1000px; background-color: var(--color-gray)")
+      section.questions
+        .container
+          form(action="#").page-form.questions__form
+            h2.questions__title have any questions?
+            .questions__form-inner
+              label.page-form__label.questions__form-label Name
+                input(type="text" placeholder="What is your name:" name="username").page-form__input.questions__form-input
+              label.page-form__label.questions__form-label Phone
+                input(type="tel" placeholder="Your phone number:" name="phone").page-form__input.questions__form-input
+              label.page-form__label.questions__form-label Question
+                input(type="text" placeholder="I want to know:" name="question").page-form__input.questions__form-input
+            .page-form__checkbox-wrap.questions__form-checkbox-wrap
+              input(type="checkbox" name="agree-checkbox" checked="true").page-form__checkbox#questions-agree-checkbox
+              label(for="questions-agree-checkbox").page-form__checkbox-label.questions__form-checkbox-label I agree to the processing of personal data
+            input(type="button" value="submit").btn-cta.page-form__submit-button.questions__form-submit-button
+      section(style="height: 1000px; background-color: var(--color-gray); text-align: center; font-size: 60px") ДРУГ ДЛЯ ОТЛАДКИ
     script(src="./js/app.min.js")
