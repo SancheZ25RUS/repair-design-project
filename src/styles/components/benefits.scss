@@ -124,6 +124,7 @@
 
   @include media-tablet {
     display: block;
+    margin-bottom: initial;
     background-image: url("@img/benefits/build.svg");
     background-position: 0  bottom;
     background-repeat: no-repeat;
