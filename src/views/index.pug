@@ -313,5 +313,23 @@ html.html(lang="en")
                 svg.contacts__data-icon
                   use(xlink:href="@img/icons/icons.svg#instagram")
           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc2a08eb688746a1bc64db778eb06eee54d3aeda54e3855c9396884ff9f863ac&amp;source=constructor" frameborder="0" class="contacts__map"></iframe>
-      section(style="height: 1000px; background-color: var(--color-gray); text-align: center; font-size: 60px") ДРУГ ДЛЯ ОТЛАДКИ
+    footer.header.footer
+      .container.header__container
+        a(href="#" aria-label="Link to home page").header__logo IC "Repair Design Project"
+        nav.nav.header__nav
+          ul.nav__list
+            li.nav__item
+              a(href="#" aria-label="Link to home").nav__link home
+            li.nav__item
+              a(href="#" aria-label="Link to projects").nav__link projects
+            li.nav__item
+              a(href="#" aria-label="Link to measurment").nav__link measurement
+            li.nav__item
+              a(href="#" aria-label="Link to team").nav__link team
+            li.nav__item
+              a(href="#" aria-label="Link to reviews").nav__link reviews
+            li.nav__item
+              a(href="#" aria-label="Link to contacts").nav__link contacts
+        a(href="tel:+79287683239" aria-label="to call").header__call +7 (928) 768-32-39
+        button(aria-label="Button to request a call").cta.header__cta request a call
     script(src="./js/app.min.js")
