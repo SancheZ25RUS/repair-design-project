@@ -301,5 +301,17 @@ html.html(lang="en")
               input(type="checkbox" name="agree-checkbox" checked="true").page-form__checkbox#questions-agree-checkbox
               label(for="questions-agree-checkbox").page-form__checkbox-label.questions__form-checkbox-label I agree to the processing of personal data
             input(type="button" value="submit").btn-cta.page-form__submit-button.questions__form-submit-button
+      section.contacts
+        .container.contacts__container
+          .contacts__data
+            p.contacts__data-text Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
+            .contacts__data-buttons-wrap
+              button(aria-label="mail").contacts__data-button
+                svg.contacts__data-icon
+                  use(xlink:href="@img/icons/icons.svg#mail")
+              button(aria-label="instagram").contacts__data-button
+                svg.contacts__data-icon
+                  use(xlink:href="@img/icons/icons.svg#instagram")
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc2a08eb688746a1bc64db778eb06eee54d3aeda54e3855c9396884ff9f863ac&amp;source=constructor" frameborder="0" class="contacts__map"></iframe>
       section(style="height: 1000px; background-color: var(--color-gray); text-align: center; font-size: 60px") ДРУГ ДЛЯ ОТЛАДКИ
     script(src="./js/app.min.js")

@@ -1,0 +1,77 @@
+.contacts {
+  padding-bottom: re-c(50);
+  background: var(--color-background-block);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: re-c(40);
+  }
+
+  &__data {
+    order: 1;
+
+    @include media-tablet {
+      order: initial;
+    }
+  }
+
+  &__data-text {
+    margin-bottom: re-c(20);
+    font: 400 re-c(18) var(--font-yeseva);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-accent);
+
+    @include media-tablet {
+      padding: 0 20%;
+    }
+  }
+
+  &__data-buttons-wrap {
+    display: flex;
+    justify-content: center;
+    gap: re-c(25);
+  }
+
+  &__data-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: re-c(20);
+    width: re-c(40);
+    height: re-c(40);
+    background: var(--color-accent);
+  }
+
+  &__data-icon {
+    width: re-c(20);
+    height: re-c(20);
+    fill: var(--color-white);
+  }
+
+  &__map {
+    width: 100%;
+    height: re-c(255);
+
+    @include media-tablet {
+      height: re-c(400);
+    }
+
+    @include media-custom(re-c(1000)) {
+      height: re-c(500);
+    }
+  }
+
+  @include media-tablet {
+    padding-top: re-c(50);
+    background-image: url("@img/contacts/contacts-bg.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include media-custom(re-c(1000)) {
+    padding-top: re-c(330);
+  }
+}
