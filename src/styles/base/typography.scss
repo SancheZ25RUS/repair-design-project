@@ -216,3 +216,31 @@
     }
   }
 }
+
+// clients
+.clients {
+  &__title {
+    color: var(--color-black);
+  }
+
+  &__description {
+    font: 400 re-c(18) var(--font-nunito);
+    text-align: center;
+    color: var(--color-black);
+  }
+
+  &__card-name {
+    font: 400 re-c(18) var(--font-yeseva);
+    color: var(--color-black);
+  }
+
+  &__card-review {
+    font: 400 re-c(13) / re-c(23.4) var(--font-nunito);
+    color: #959595;
+  }
+
+  &__card-data {
+    font: 400 re-c(17) var(--font-yeseva);
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,71 @@
+.clients {
+  display: none;
+  background-image: url("@img/clients/clients-bg.svg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  &__description {
+    margin: 0 auto;
+    margin-bottom: re-c(40);
+    max-width: re-c(400);
+  }
+
+  &__card-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: re-c(30);
+  }
+
+  &__card {
+    position: relative;
+    padding: re-c(25) re-c(30) re-c(70) re-c(20);
+    box-shadow: 0 10px 50px rgb(0 0 0 / 4%);
+  }
+
+  &__card-bio {
+    display: flex;
+    align-items: center;
+    margin-bottom: re-c(20);
+    gap: re-c(20);
+  }
+
+  &__card-review {
+    > p {
+      margin-bottom: re-c(20);
+    }
+  }
+
+  &__card-data {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-flex;
+    box-shadow: 5px 5px 20px rgb(227 184 115 / 50%);
+    background-color: var(--color-accent);
+    transform: translateY(50%);
+  }
+
+  &__card-data-size {
+    border-right: re-c(1) solid var(--color-white);
+  }
+
+  &__card-data-size,
+  &__card-data-time {
+    display: flex;
+    align-items: center;
+    padding: re-c(5) re-c(10);
+    white-space: nowrap;
+    gap: re-c(15);
+
+    > svg {
+      width: re-c(32);
+      height: re-c(32);
+      fill: var(--color-white);
+    }
+  }
+
+  @include media-custom(re-c(1000)) {
+    display: block;
+    padding-bottom: re-c(380);
+  }
+}
