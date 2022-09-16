@@ -1,0 +1,131 @@
+.benefits {
+  display: none;
+  margin-bottom: re-c(250);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: re-c(100) 0;
+    gap: 5%;
+  }
+
+  &__list-wrap {
+    flex-grow: 1;
+    flex-basis: re-c(350);
+    padding: re-c(10) 0;
+    padding-top: re-c(10);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 15%;
+  }
+
+  &__list-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: re-c(10);
+
+    &::before {
+      content: "01";
+      display: flex;
+      flex-grow: 0;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      border: re-c(8) solid var(--color-white);
+      border-radius: re-c(30);
+      width: re-c(50);
+      height: re-c(50);
+      box-shadow: 0 5px 15px rgb(227 184 115 / 15%);
+      font: 400 re-c(18) var(--font-yeseva);
+      color: var(--color-white);
+      background-color: var(--color-accent);
+    }
+
+    &:nth-child(2)::before {
+      content: "02";
+    }
+
+    &:nth-child(3)::before {
+      content: "03";
+    }
+
+    &:nth-child(4)::before {
+      content: "04";
+    }
+  }
+
+  &__form {
+    margin-bottom: re-c(40);
+    padding: re-c(30) re-c(50);
+    background-color: var(--color-background-block);
+  }
+
+  &__form-label {
+    margin-bottom: re-c(40);
+
+    &:last-child {
+      margin-bottom: re-c(199);
+    }
+  }
+
+  &__form-title {
+    padding: 0 15%;
+  }
+
+  &__form-input {
+    margin-bottom: re-c(50);
+    color: var(--color-white);
+
+    &::placeholder {
+      color: var(--color-white);
+    }
+  }
+
+  &__form-submit-button {
+    margin: 0 0 0 auto;
+    width: 55%;
+  }
+
+  &__form-checkbox-label {
+    color: var(--color-white);
+  }
+
+  &__discount {
+    display: flex;
+    align-items: center;
+    gap: re-c(25);
+  }
+
+  &__discount-text {
+    max-width: re-c(228);
+  }
+
+  &__discount-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: re-c(40);
+    width: re-c(72);
+    height: re-c(72);
+    box-shadow: 0 10px 20px rgb(237 192 120 / 20%);
+    background-color: var(--color-accent);
+  }
+
+  &__discount-icon {
+    width: re-c(40);
+    height: re-c(33);
+    fill: var(--color-white);
+  }
+
+  @include media-tablet {
+    display: block;
+    background-image: url("@img/benefits/build.svg");
+    background-position: 0  bottom;
+    background-repeat: no-repeat;
+  }
+}

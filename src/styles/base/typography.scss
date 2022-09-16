@@ -127,20 +127,6 @@
       color: var(--color-gray);
     }
   }
-
-  &__form-checkbox-label {
-    font: 400 re-c(14) var(--font-nunito);
-
-    @include media-tablet {
-      color: initial;
-    }
-  }
-
-  &__form-submit-button {
-    font: 400 re-c(13) var(--font-nunito);
-    text-transform: uppercase;
-    color: var(--color-white);
-  }
 }
 
 // repair-types
@@ -176,5 +162,30 @@
 
   @include media-tablet {
     font: 400 re-c(13) / re-c(26) var(--font-nunito);
+  }
+}
+
+// benefits
+.benefits {
+  &__list {
+    @include media-tablet {
+      color: var(--color-gray);
+    }
+  }
+
+  &__form-title {
+    font: 400 re-c(18) / re-c(26) var(--font-nunito);
+    text-align: center;
+  }
+
+  &__form-input {
+    &::placeholder {
+      color: var(--color-gray);
+    }
+  }
+
+  &__discount {
+    font: 400 re-c(18) / re-c(26) var(--font-nunito);
+    color: var(--color-accent);
   }
 }

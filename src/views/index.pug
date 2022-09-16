@@ -156,5 +156,31 @@ html.html(lang="en")
                   li.repair-types__card-list-item Replacing sockets and switches
                   li.repair-types__card-list-item Replacing doors
                 button.btc-cta.repair-types__btn-cta from 4000 rub / m2
+      section.benefits
+        .container.benefits__container
+          .benefits__list-wrap
+            ul.benefits__list
+              li.benefits__list-item Our specialist will arrive for measurements per day contact, or appoint a date convenient for you
+              li.benefits__list-item Free metering
+              li.benefits__list-item Free consultation
+              li.benefits__list-item Get a cost estimate and the timing of your future repairs
+          .benefits__form-wrap
+            form(action="#").page-form.benefits__form
+              h3.benefits__form-title Leave a request for free departure of the measurer
+              label.page-form__label Name
+                input(type="text" placeholder="What is your name:" name="username").page-form__input.benefits__form-input
+              label.page-form__label Number
+                input(type="tel" placeholder="Your phone number:" name="phone").page-form__input.benefits__form-input
+              label.page-form__label Email
+                input(type="email" placeholder="Your email:" name="email").page-form__input.benefits__form-input
+              .page-form__checkbox-wrap
+                input(type="checkbox" name="agree-checkbox" checked="true").page-form__checkbox#benefits-agree-checkbox
+                label(for="benefits-agree-checkbox").page-form__checkbox-label.benefits__form-checkbox-label I agree to the processing of personal data
+              input(type="button" value="Call the measurer").btn-cta.page-form__submit-button.benefits__form-submit-button
+            .benefits__discount
+              .benefits__discount-icon-wrap
+                svg.benefits__discount-icon
+                  use(xlink:href="@img/icons/icons.svg#pig")
+              p.benefits__discount-text Help save 10 - 20% of the cost of materials
       section(style="height: 100px; background-color: var(--color-gray)")
     script(src="./js/app.min.js")
