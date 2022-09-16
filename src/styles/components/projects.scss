@@ -109,6 +109,12 @@
     }
   }
 
+  &__slider-arrow-wrap {
+    @include media-tablet {
+      display: none;
+    }
+  }
+
   &__pagination-arrow-svg {
     @include media-tablet {
       width: re-c(43);
