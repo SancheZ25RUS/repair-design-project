@@ -47,16 +47,16 @@ html.html(lang="en")
               br
               | projects
             p.projects__subtitle Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
-          .slider.projects__slider
-            .slider__track
+          .slider.projects__slider(data-slider)
+            .slider__track(data-slider-track)
               img(src="@img/projects/project-1.jpg" alt="Photo completed apartment").slider__image
               img(src="@img/projects/project-2.jpg" alt="Photo completed apartment").slider__image
               img(src="@img/projects/project-3.jpg" alt="Photo completed apartment").slider__image
             .slider__arrow-wrap.projects__slider-arrow-wrap
-              button.slider__arrow
+              button.slider__arrow(data-slider-arrow-mobile-prev)
                 svg.arrow-svg.arrow-svg--left
                   use(xlink:href="@img/icons/icons.svg#slider-arrow")
-              button.slider__arrow
+              button.slider__arrow(data-slider-arrow-mobile-next)
                 svg.arrow-svg
                   use(xlink:href="@img/icons/icons.svg#slider-arrow")
           .projects__info
@@ -75,14 +75,14 @@ html.html(lang="en")
               h3.projects__info-title repair cost:
               p.projects__info-data Upon request
           .projects__pagination
-            button.projects__pagination-arrow-btn
+            button.projects__pagination-arrow-btn(data-slider-arrow-desktop-prev)
               svg.projects__pagination-arrow-svg
                 use(xlink:href="@img/icons/icons.svg#pagination-arrow")
             .projects__pagination-dot-wrap
-              button.projects__pagination-dot.projects__pagination-dot--active
-              button.projects__pagination-dot
-              button.projects__pagination-dot
-            button.projects__pagination-arrow-btn.projects__pagination-arrow-btn--next
+              button.projects__pagination-dot.projects__pagination-dot--active(data-pagination-dot)
+              button.projects__pagination-dot(data-pagination-dot)
+              button.projects__pagination-dot(data-pagination-dot)
+            button.projects__pagination-arrow-btn.projects__pagination-arrow-btn--next(data-slider-arrow-desktop-next)
               svg.projects__pagination-arrow-svg
                 use(xlink:href="@img/icons/icons.svg#pagination-arrow")
       section.online-control
