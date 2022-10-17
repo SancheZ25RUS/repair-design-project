@@ -4,6 +4,7 @@
 
   &__track {
     display: flex;
+    transition: all 1s;
 
     > picture {
       min-width: 100%;
