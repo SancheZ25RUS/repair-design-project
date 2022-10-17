@@ -47,15 +47,15 @@
             <h2 class="projects__title">completed<br>projects</h2>
             <p class="projects__subtitle">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
           </header>
-          <div class="slider projects__slider">
-            <div class="slider__track"><picture><source srcset="./img/projects/project-1.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-1.jpg" alt="Photo completed apartment"></picture><picture><source srcset="./img/projects/project-2.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-2.jpg" alt="Photo completed apartment"></picture></div>
+          <div class="slider projects__slider" data-slider>
+            <div class="slider__track" data-slider-track><picture><source srcset="./img/projects/project-1.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-1.jpg" alt="Photo completed apartment"></picture><picture><source srcset="./img/projects/project-2.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-2.jpg" alt="Photo completed apartment"></picture><picture><source srcset="./img/projects/project-3.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-3.jpg" alt="Photo completed apartment"></picture></div>
             <div class="slider__arrow-wrap projects__slider-arrow-wrap">
-              <button class="slider__arrow">
+              <button class="slider__arrow" data-slider-arrow-mobile-prev>
                 <svg class="arrow-svg arrow-svg--left">
                   <use xlink:href="./img/icons/icons.svg#slider-arrow"></use>
                 </svg>
               </button>
-              <button class="slider__arrow">
+              <button class="slider__arrow" data-slider-arrow-mobile-next>
                 <svg class="arrow-svg">
                   <use xlink:href="./img/icons/icons.svg#slider-arrow"></use>
                 </svg>
@@ -81,17 +81,17 @@
             </div>
           </div>
           <div class="projects__pagination">
-            <button class="projects__pagination-arrow-btn">
+            <button class="projects__pagination-arrow-btn" data-slider-arrow-desktop-prev>
               <svg class="projects__pagination-arrow-svg">
                 <use xlink:href="./img/icons/icons.svg#pagination-arrow"></use>
               </svg>
             </button>
             <div class="projects__pagination-dot-wrap">
-              <button class="projects__pagination-dot projects__pagination-dot--active"></button>
-              <button class="projects__pagination-dot"></button>
-              <button class="projects__pagination-dot"></button>
+              <button class="projects__pagination-dot projects__pagination-dot--active" data-pagination-dot></button>
+              <button class="projects__pagination-dot" data-pagination-dot></button>
+              <button class="projects__pagination-dot" data-pagination-dot></button>
             </div>
-            <button class="projects__pagination-arrow-btn projects__pagination-arrow-btn--next">
+            <button class="projects__pagination-arrow-btn projects__pagination-arrow-btn--next" data-slider-arrow-desktop-next>
               <svg class="projects__pagination-arrow-svg">
                 <use xlink:href="./img/icons/icons.svg#pagination-arrow"></use>
               </svg>
