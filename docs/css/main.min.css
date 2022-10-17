@@ -593,7 +593,6 @@ img {
 }
 .slider__track {
   display: flex;
-  transition: all 1s;
 }
 .slider__track > picture {
   min-width: 100%;
