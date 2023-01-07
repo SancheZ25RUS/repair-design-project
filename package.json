@@ -19,7 +19,6 @@
     "gulp-cli": "latest"
   },
   "devDependencies": {
-    "@splidejs/splide": "^4.0.7",
     "browser-sync": "latest",
     "del": "^6.0.0",
     "eslint": "^8.26.0",
