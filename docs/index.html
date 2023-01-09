@@ -39,16 +39,16 @@
       <section class="projects">
         <div class="container projects__container">
           <div class="projects__tab-wrap">
-            <button class="projects__tab projects__tab--active">rostov-on-don, admiral</button>
-            <button class="projects__tab">sochi thieves</button>
-            <button class="projects__tab">rostov-on-don, patriotic</button>
+            <button class="projects__tab" data-tab-index="0">rostov-on-don, admiral</button>
+            <button class="projects__tab" data-tab-index="1">sochi thieves</button>
+            <button class="projects__tab" data-tab-index="2">rostov-on-don, patriotic</button>
           </div>
           <header class="projects__header">
-            <h2 class="projects__title">completed<br>projects</h2>
+            <h2 class="projects__title">completed projects</h2>
             <p class="projects__subtitle">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
           </header>
           <div class="slider projects__slider" data-slider>
-            <div class="slider__track" data-slider-track><picture><source srcset="./img/projects/project-1.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-1.jpg" alt="Photo completed apartment"></picture><picture><source srcset="./img/projects/project-2.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-2.jpg" alt="Photo completed apartment"></picture><picture><source srcset="./img/projects/project-3.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-3.jpg" alt="Photo completed apartment"></picture></div>
+            <div class="slider__track" data-slider-track style="transform: translateX(0)"><picture><source srcset="./img/projects/project-1.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-1.jpg" alt="Photo completed apartment"></picture><picture><source srcset="./img/projects/project-2.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-2.jpg" alt="Photo completed apartment"></picture><picture><source srcset="./img/projects/project-3.webp" type="image/webp"><img class="slider__image" src="./img/projects/project-3.jpg" alt="Photo completed apartment"></picture></div>
             <div class="slider__arrow-wrap projects__slider-arrow-wrap">
               <button class="slider__arrow" data-slider-arrow-mobile-prev>
                 <svg class="arrow-svg arrow-svg--left">
@@ -65,19 +65,20 @@
           <div class="projects__info">
             <div class="projects__info-item">
               <h3 class="projects__info-title">city:</h3>
-              <p class="projects__info-data">Rostov-on-Don<br></p>LCD admiral
+              <p class="projects__info-data projects__info-city" data-city></p>
+              <p class="projects__info-data" data-region></p>
             </div>
             <div class="projects__info-item">
               <h3 class="projects__info-title">apartment area:</h3>
-              <p class="projects__info-data">81 m2</p>
+              <p class="projects__info-data" data-apartment-area></p>
             </div>
             <div class="projects__info-item">
               <h3 class="projects__info-title">repair time:</h3>
-              <p class="projects__info-data">3.5 months</p>
+              <p class="projects__info-data" data-repair-time></p>
             </div>
             <div class="projects__info-item">
               <h3 class="projects__info-title">repair cost:</h3>
-              <p class="projects__info-data">Upon request</p>
+              <p class="projects__info-data" data-repair-cost></p>
             </div>
           </div>
           <div class="projects__pagination">
@@ -87,9 +88,9 @@
               </svg>
             </button>
             <div class="projects__pagination-dot-wrap">
-              <button class="projects__pagination-dot projects__pagination-dot--active" data-pagination-dot></button>
-              <button class="projects__pagination-dot" data-pagination-dot></button>
-              <button class="projects__pagination-dot" data-pagination-dot></button>
+              <button class="projects__pagination-dot" data-dot-index="0"></button>
+              <button class="projects__pagination-dot" data-dot-index="1"></button>
+              <button class="projects__pagination-dot" data-dot-index="2"></button>
             </div>
             <button class="projects__pagination-arrow-btn projects__pagination-arrow-btn--next" data-slider-arrow-desktop-next>
               <svg class="projects__pagination-arrow-svg">
