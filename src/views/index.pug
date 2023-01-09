@@ -39,16 +39,14 @@ html.html(lang="en")
       section.projects
         .container.projects__container
           .projects__tab-wrap
-            button.projects__tab.projects__tab--active rostov-on-don, admiral
-            button.projects__tab sochi thieves
-            button.projects__tab rostov-on-don, patriotic
+            button.projects__tab(data-tab-index="0") rostov-on-don, admiral
+            button.projects__tab(data-tab-index="1") sochi thieves
+            button.projects__tab(data-tab-index="2") rostov-on-don, patriotic
           header.projects__header
-            h2.projects__title completed
-              br
-              | projects
+            h2.projects__title completed projects
             p.projects__subtitle Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families
           .slider.projects__slider(data-slider)
-            .slider__track(data-slider-track)
+            .slider__track(data-slider-track style="transform: translateX(0)")
               img(src="@img/projects/project-1.jpg" alt="Photo completed apartment").slider__image
               img(src="@img/projects/project-2.jpg" alt="Photo completed apartment").slider__image
               img(src="@img/projects/project-3.jpg" alt="Photo completed apartment").slider__image
@@ -62,26 +60,25 @@ html.html(lang="en")
           .projects__info
             .projects__info-item
               h3.projects__info-title city:
-              p.projects__info-data Rostov-on-Don
-                br
-              | LCD admiral
+              p(data-city).projects__info-data.projects__info-city
+              p(data-region).projects__info-data
             .projects__info-item
               h3.projects__info-title apartment area:
-              p.projects__info-data 81 m2
+              p(data-apartment-area).projects__info-data
             .projects__info-item
               h3.projects__info-title repair time:
-              p.projects__info-data 3.5 months
+              p(data-repair-time).projects__info-data
             .projects__info-item
               h3.projects__info-title repair cost:
-              p.projects__info-data Upon request
+              p(data-repair-cost).projects__info-data
           .projects__pagination
             button.projects__pagination-arrow-btn(data-slider-arrow-desktop-prev)
               svg.projects__pagination-arrow-svg
                 use(xlink:href="@img/icons/icons.svg#pagination-arrow")
             .projects__pagination-dot-wrap
-              button.projects__pagination-dot.projects__pagination-dot--active(data-pagination-dot)
-              button.projects__pagination-dot(data-pagination-dot)
-              button.projects__pagination-dot(data-pagination-dot)
+              button.projects__pagination-dot(data-dot-index="0")
+              button.projects__pagination-dot(data-dot-index="1")
+              button.projects__pagination-dot(data-dot-index="2")
             button.projects__pagination-arrow-btn.projects__pagination-arrow-btn--next(data-slider-arrow-desktop-next)
               svg.projects__pagination-arrow-svg
                 use(xlink:href="@img/icons/icons.svg#pagination-arrow")
